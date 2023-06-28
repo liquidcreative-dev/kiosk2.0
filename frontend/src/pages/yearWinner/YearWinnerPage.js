@@ -3,6 +3,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import FinalistsComponent from './FinalistsComponent';
 
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
+import { config } from '../components/Constants'
+const URL = config.url;
 
 const YearWinnerPage = () => {
   const { awardId, yearId } = useParams();
@@ -17,7 +19,7 @@ const YearWinnerPage = () => {
   const [school, setSchool] = useState();
 
   useEffect(() => {
-    fetch(`http://localhost:1337/api/years/${yearId}?populate=*`)
+    fetch(`${URL}/api/years/${yearId}?populate=*`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

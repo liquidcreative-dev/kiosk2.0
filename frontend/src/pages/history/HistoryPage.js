@@ -3,6 +3,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import HistoryComponent from './HistoryComponent';
 import YearComponent from './YearComponent';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
+import { config } from '../components/Constants'
+const URL = config.url;
 
 const HistoryPage = () => {
   const [award, setAward] = useState();
@@ -10,7 +12,7 @@ const HistoryPage = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:1337/api/awards/${id}?populate=*`)
+    fetch(`${URL}/api/awards/${id}?populate=*`)
       .then((res) => res.json())
       .then((data) => {
         setAward(data);

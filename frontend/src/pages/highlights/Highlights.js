@@ -2,6 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { config } from '../components/Constants'
+const URL = config.url;
 
 const Highlights = () => {
   const { athleteId } = useParams();
@@ -9,7 +11,7 @@ const Highlights = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch(`http://localhost:1337/api/athletes/${athleteId}`)
+    fetch(`${URL}/api/athletes/${athleteId}`)
       .then((res) => res.json())
       .then((data) => {
         setAthlete(data);
