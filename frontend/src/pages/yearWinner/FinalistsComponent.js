@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { config } from '../components/Constants'
+const URL = config.url;
 
 const FinalistsComponent = ({ awardId, yearId, onClose }) => {
   const [finalists, setFinalists] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:1337/api/years/${yearId}?populate=*`)
+    fetch(`${URL}/api/years/${yearId}?populate=*`)
       .then((res) => res.json())
       .then((data) => {
         const specificAward = data.data.attributes.awards.data.find(

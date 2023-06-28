@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import StatsComponent from './StatsComponent';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
+import { config } from '../components/Constants'
+const URL = config.url;
 
 const WinnerProfilePage = () => {
   const [winner, setWinner] = useState({});
@@ -9,7 +11,7 @@ const WinnerProfilePage = () => {
   const { athleteId } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:1337/api/athletes/${athleteId}?populate=*`)
+    fetch(`${URL}/api/athletes/${athleteId}?populate=*`)
       .then((res) => res.json())
       .then((data) => {
         setWinner(data.data.attributes);

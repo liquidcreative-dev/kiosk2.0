@@ -2,12 +2,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
+import { config } from '../components/Constants'
+const URL = config.url;
+
 
 const AwardsPage = () => {
   const [awards, setAwards] = useState('');
 
   useEffect(() => {
-    fetch(`http://localhost:1337/api/awards?populate=*`)
+    fetch(`${URL}/api/awards?populate=*`)
       .then((res) => res.json())
       .then((awards) => {
         setAwards(awards)
