@@ -25,6 +25,7 @@ const Highlights = () => {
       <button className="btn btn-danger btnStyle w-100 mb-2" onClick={() => navigate('/awards')}>Menu</button>
       {athlete?.images?.map((image, index) => (
         <div key={index} className="card">
+          <h6>Highlights are going to go here! Pics! Videos! You name it! We got it!</h6>
           <img src={image.url} className="card-img-top" alt="Athlete" />
         </div>
       ))}
