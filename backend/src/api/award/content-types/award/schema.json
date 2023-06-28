@@ -1,0 +1,132 @@
+{
+  "kind": "collectionType",
+  "collectionName": "awards",
+  "info": {
+    "singularName": "award",
+    "pluralName": "awards",
+    "displayName": "Award",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "history": {
+      "type": "richtext",
+      "required": true
+    },
+    "years": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::year.year",
+      "mappedBy": "awards"
+    },
+    "awardSelectImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sport": {
+      "type": "enumeration",
+      "enum": [
+        "football",
+        "basketball",
+        "baseball"
+      ],
+      "required": true
+    },
+    "trophyImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "awardHistoryImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "athletes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::athlete.athlete",
+      "mappedBy": "award"
+    },
+    "selectImageLink": {
+      "type": "string"
+    },
+    "iconLink": {
+      "type": "string"
+    },
+    "trophyImageLink": {
+      "type": "string"
+    },
+    "historyImageLink": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "jerseyIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "jerseyIconLink": {
+      "type": "string"
+    },
+    "sponsorLogo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "sponsorLogoLink": {
+      "type": "string"
+    }
+  }
+}
