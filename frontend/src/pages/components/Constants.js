@@ -7,4 +7,4 @@ const dev = {
     url: 'http://localhost:1337'
 }
 
-export const config = process.env.NODE_ENV === 'production' ? production : dev ;
+export const config = process.env.NODE_ENV === 'production' ? dev : production ;
