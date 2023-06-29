@@ -10,12 +10,7 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "import-export-entries": {
-      "idField": "schoolName"
-    }
-
-  },
+  "pluginOptions": {},
   "attributes": {
     "schoolName": {
       "type": "string",

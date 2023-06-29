@@ -10,11 +10,7 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "import-export-entries": {
-      "idField": "awardYear"
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "awards": {
       "type": "relation",
@@ -22,16 +18,16 @@
       "target": "api::award.award",
       "inversedBy": "years"
     },
+    "athletes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::athlete.athlete",
+      "mappedBy": "years"
+    },
     "awardYear": {
       "type": "string",
       "default": "null",
       "unique": true
-    },
-    "athlete": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::athlete.athlete",
-      "inversedBy": "years"
     }
   }
 }

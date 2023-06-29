@@ -10,11 +10,7 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "import-export-entries": {
-      "idField": "firstName"
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "firstName": {
       "type": "string",
@@ -56,6 +52,12 @@
       "target": "api::award.award",
       "inversedBy": "athletes"
     },
+    "years": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::year.year",
+      "inversedBy": "athletes"
+    },
     "jerseyNum": {
       "type": "integer",
       "default": 0
@@ -67,8 +69,7 @@
       "type": "enumeration",
       "enum": [
         "football",
-        "basketball (M)",
-        "basketball (W)",
+        "basketball",
         "baseball"
       ],
       "required": true
@@ -159,24 +160,17 @@
       "type": "string"
     },
     "schoolLogo": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": false
     },
     "schoolLogoLink": {
       "type": "string"
-    },
-    "years": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::year.year",
-      "mappedBy": "athlete"
     }
   }
 }
