@@ -6,7 +6,7 @@ import FinalistsComponent from './FinalistsComponent';
 // import { ReactComponent as MSHFWhiteLogo } from 'frontend/src/public/images/mshf-white-logo.svg';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
 // import { config } from '../components/constants'
-import { config } from '../components/constants';
+import { config } from '../components/constants.js';
 const URL = config.url
 
 
