@@ -10,7 +10,12 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "import-export-entries": {
+      "idField": "name"
+    }
+
+  },
   "attributes": {
     "name": {
       "type": "string",
