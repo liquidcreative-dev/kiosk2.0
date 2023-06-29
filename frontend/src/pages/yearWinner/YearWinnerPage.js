@@ -5,8 +5,6 @@ import FinalistsComponent from './FinalistsComponent';
 
 // import { ReactComponent as MSHFWhiteLogo } from 'frontend/src/public/images/mshf-white-logo.svg';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
-import { config } from '../components/Constants'
-const URL = config.url;
 
 const YearWinnerPage = () => {
   const { awardId, yearId } = useParams();

@@ -3,8 +3,8 @@ import { useNavigate, useParams } from 'react-router-dom';
 import HistoryComponent from './HistoryComponent';
 import YearComponent from './YearComponent';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
-import { config } from '../components/Constants'
-const URL = config.url;
+
+const URL = "https://lobster-app-6xzrh.ondigitalocean.app/strapi"
 
 const HistoryPage = () => {
 

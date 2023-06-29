@@ -2,8 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { config } from '../components/Constants'
-const URL = config.url;
+
+const URL = "https://lobster-app-6xzrh.ondigitalocean.app/strapi"
 
 const Highlights = () => {
   const { athleteId } = useParams();
