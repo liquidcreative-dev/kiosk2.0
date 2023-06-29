@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import StatsComponent from './StatsComponent';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
-
-const URL = "https://lobster-app-6xzrh.ondigitalocean.app"
+import { config } from '../components/constants'
+const URL = config.url
 
 const WinnerProfilePage = () => {
   const [winner, setWinner] = useState({});

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-const URL = "https://lobster-app-6xzrh.ondigitalocean.app"
+import { config } from '../components/constants'
+const URL = config.url
 
 const FinalistsComponent = ({ awardId, yearId, onClose }) => {
   const [finalists, setFinalists] = useState([]);
