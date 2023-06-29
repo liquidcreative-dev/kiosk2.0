@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as MSHFWhiteLogo } from '../../public/images/sports_hall_logo_white.svg';
-import { config } from '../components/constants.js';
+import { config } from './constants';
 const URL = config.url
 
 
