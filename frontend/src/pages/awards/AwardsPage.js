@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
 // import '../components/Constants';
-// const URL = "https://lobster-app-6xzrh.ondigitalocean.app"
+const URL = "https://lobster-app-6xzrh.ondigitalocean.app"
 
 
 const AwardsPage = () => {
