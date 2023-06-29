@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import StatsComponent from './StatsComponent';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
 
-const URL = "https://lobster-app-6xzrh.ondigitalocean.app/strapi"
+const URL = "https://lobster-app-6xzrh.ondigitalocean.app"
 
 const WinnerProfilePage = () => {
   const [winner, setWinner] = useState({});
