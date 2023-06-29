@@ -47,6 +47,8 @@ const HistoryPage = () => {
     if (componentToShow === 'year') return 'finalists/winners';
     return '';
   };
+  // console.log(award?.data.attributes.years.data)
+console.log(award);
 
   return (
     <>
