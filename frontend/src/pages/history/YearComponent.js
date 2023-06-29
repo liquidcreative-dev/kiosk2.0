@@ -1,11 +1,8 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const YearComponent = ({ award, onClose }) => {
-  const navigate = useNavigate();
-
-  // Define the function here
+  
   function formatYear(yearStr) {
     const match = yearStr.match(/(\d{2})$/);
     return match ? `'${match[0]}` : 'Invalid year';
