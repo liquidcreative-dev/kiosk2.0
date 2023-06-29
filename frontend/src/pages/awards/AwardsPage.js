@@ -22,6 +22,7 @@ const AwardsPage = () => {
   }, [])
   console.log(awards);
 
+
   return (
     <div className="container-fluid">
       {/* <div className="position-absolute bg-dark awardContainer"> */}
