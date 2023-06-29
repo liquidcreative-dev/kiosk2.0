@@ -1,5 +1,5 @@
 module.exports = ({ env }) => ({
-  // url: env("https://whale-app-q9yuk.ondigitalocean.app/", "http://localhost:1337"),
+  //url: env("https://lobster-app-6xzrh.ondigitalocean.app/", "http://localhost:1337"),
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
   app: {

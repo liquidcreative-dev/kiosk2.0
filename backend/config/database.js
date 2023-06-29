@@ -70,14 +70,40 @@
 //   };
 // };
 
-const path = require('path');
+
+
+
+
+
+// const path = require('path');
+
+// module.exports = ({ env }) => ({
+//   connection: {
+//     client: 'sqlite',
+//     connection: {
+//       filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+//     },
+//     useNullAsDefault: true,
+//   },
+// });
 
 module.exports = ({ env }) => ({
   connection: {
-    client: 'sqlite',
-    connection: {
-      filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
-    },
-    useNullAsDefault: true,
+      client: 'postgres',
+      connection: {
+          host: env('DATABASE_HOST'),
+          database: env('DATABASE_NAME', 5432),
+          user: env('DATABASE_USERNAME'),
+          password: env('DATABASE_PASSWORD'),
+          schema: env('DATABASE_SCHEMA'), // Not required
+          ssl: {
+              ca: env('DATABASE_CA')
+          },
+      },
+      pool: {
+          min: 0,
+          max: 1000  // increase this number as needed
+      },
+      debug: false,
   },
 });
