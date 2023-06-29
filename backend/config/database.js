@@ -102,7 +102,8 @@ module.exports = ({ env }) => ({
       },
       pool: {
           min: 0,
-          max: 1000  // increase this number as needed
+          max: 1000,
+          acquireTimeoutMillis: 30000,  // increase this number as needed
       },
       debug: false,
   },
