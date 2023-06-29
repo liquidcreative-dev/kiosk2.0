@@ -13,7 +13,7 @@ module.exports = ({ env }) => ({
         },
         pool: {
             min: 0,
-            max: 50  // increase this number as needed
+            max: 500  // increase this number as needed
         },
         debug: false,
     },
