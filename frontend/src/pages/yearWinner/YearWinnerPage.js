@@ -8,6 +8,8 @@ import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
 import { config } from '../components/constants'
 const URL = config.url
 
+
+
 const YearWinnerPage = () => {
   const { awardId, yearId } = useParams();
   const [yearData, setYearData] = useState();
@@ -45,7 +47,7 @@ const YearWinnerPage = () => {
         console.error('Error:', error);
       });
   }, [awardId, yearId]);
-
+  console.log(URL);
 
   return (
     <div className="container-fluid bg-dark yearWinnerImage" style={{ backgroundImage: `url(${winner?.attributes.imageLink})`}}>
