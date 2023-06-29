@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { config } from '../components/constants';
+import { config } from '../components/constants.js';
 const URL = config.url
 
 const Highlights = () => {
