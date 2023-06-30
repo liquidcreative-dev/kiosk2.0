@@ -1,12 +1,18 @@
-@import url(//db.onlinewebfonts.com/c/3c8d73b6445ba908ca25b544c44f01d6?family=OLD+SPORT+02+ATHLETIC+NCV);
-/* @font-face {font-family: "OLD SPORT 02 ATHLETIC NCV"; src: url("//db.onlinewebfonts.com/t/3c8d73b6445ba908ca25b544c44f01d6.eot"); src: url("//db.onlinewebfonts.com/t/3c8d73b6445ba908ca25b544c44f01d6.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3c8d73b6445ba908ca25b544c44f01d6.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/3c8d73b6445ba908ca25b544c44f01d6.woff") format("woff"), url("//db.onlinewebfonts.com/t/3c8d73b6445ba908ca25b544c44f01d6.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/3c8d73b6445ba908ca25b544c44f01d6.svg#OLD SPORT 02 ATHLETIC NCV") format("svg"); } */
+@font-face {
+    font-family: 'OldSport02AthleticNcv';
+    src: local('OldSport02AthleticNcv'), url(./fonts/OldSport02AthleticNcv.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'IndianPersonalUse';
+    src: local('IndianPersonalUse'), url(./fonts/IndianPersonalUse.ttf) format('truetype');
+}
 
 * {
     box-sizing: border-box;
     /* font-family: 'OLD SPORT 02 ATHLETIC NCV'; */
 }
 .athleticFont {
-    font-family: 'OLD SPORT 02 ATHLETIC NCV';
+    font-family: 'OLDSPORT02ATHLETICNCV';
 }
 
 .yellowBanner {
@@ -23,7 +29,7 @@
 }
 
 .theWord {
-    font-family: 'Indian Personal Use', sans-serif;
+    font-family: 'IndianPersonalUse', sans-serif;
     font-weight:lighter;
     margin-right: 20px;
     padding-left: 100px;
