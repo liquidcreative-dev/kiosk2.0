@@ -39,7 +39,7 @@ const AwardsPage = () => {
 
                       <div className="display-flex trophyNameContainer">
                         <div className="trophyName text-uppercase text-white">
-                          <p className="firstNameText">{award.attributes.firstName}</p><span className="awardNameFull athleticFont">{award.attributes.name}</span>
+                        <p className="awardNameFull athleticFont">{award.attributes.name}</p><span className="firstNameText">Trophy</span>
                         </div>
                       </div>
                     </div>
