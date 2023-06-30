@@ -53,8 +53,9 @@
       "type": "enumeration",
       "enum": [
         "football",
-        "basketball",
-        "baseball"
+        "basketball (M)",
+        "baseball",
+        "basketball (W)"
       ],
       "required": true
     },
@@ -116,14 +117,15 @@
       "type": "string"
     },
     "sponsorLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "sponsorLogoLink": {
       "type": "string"
