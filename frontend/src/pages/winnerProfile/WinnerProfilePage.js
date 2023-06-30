@@ -47,7 +47,7 @@ const WinnerProfilePage = () => {
   
       
       <div className="col-md-4 text-white text-uppercase align-items-left profileInfo">
-          <img src={winner.school?.data?.attributes?.logoLink} alt="school-logo" className="my-4 img-fluid profileSchoolLogo" />
+          <img src={winner.school?.data?.attributes?.schoolLogoLink} alt="school-logo" className="my-4 img-fluid profileSchoolLogo" />
           <p className="profileText athleticFont">{winner.firstName} {winner.lastName}</p>
           <p className="profileSubText">{winner.positionFullName}</p>
       </div>
