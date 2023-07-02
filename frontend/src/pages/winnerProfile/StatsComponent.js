@@ -15,11 +15,12 @@ const StatsComponent = ({ trophyWinner, onClose }) => {
             <p className= "athleticFont athleteName">{trophyWinner.firstName} {trophyWinner.lastName}</p>
             <div style={{overflow: 'auto', maxHeight: '200px'}}>
             {trophyWinner.class && trophyWinner.class !== "null" && <p className="playerStatTitles quote mt-1">Class: <span className="statStyle mt-1">{trophyWinner.class}</span></p>}
-            {trophyWinner.htwt && trophyWinner.htwt !== "null" && <p className="playerStatTitles quote">Ht/Wt: <span className="statStyle ">{trophyWinner.htwt}</span></p>}
+            {trophyWinner.heightInFeet && trophyWinner.heightInFeet !== "null" && trophyWinner.heightInInches && trophyWinner.heightInInches !== "null" && <p className="playerStatTitles quote">Height: <span className="statStyle ">{trophyWinner.heightInFeet}'</span><span className="statStyle ">{trophyWinner.heightInInches}"</span></p>}
+            {trophyWinner.weight && trophyWinner.weight !== "null" && <p className="playerStatTitles quote">Weight: <span className="statStyle ">{trophyWinner.weight}</span></p>}
             {trophyWinner.hometown && trophyWinner.hometown !== "null" && <p className="playerStatTitles quote">Hometown: <span className="statStyle ">{trophyWinner.hometown}</span></p>}
             {trophyWinner.prevSchool && trophyWinner.prevSchool !== "null" && <p className="playerStatTitles quote">Previous School: <span className="statStyle ">{trophyWinner.prevSchool}</span></p>}
             {trophyWinner.position && trophyWinner.position !== "null" && <p className="playerStatTitles quote">Position: <span className="statStyle ">{trophyWinner.position}</span></p>}
-            {trophyWinner.highSchool && trophyWinner.highSchool !== "null" && <p className="playerStatTitles quote">Highschool: <span className="statStyle ">{trophyWinner.highSchool}</span></p>}
+            {trophyWinner.highschool && trophyWinner.highschool !== "null" && <p className="playerStatTitles quote">Highschool: <span className="statStyle ">{trophyWinner.highschool}</span></p>}
             {trophyWinner.major && trophyWinner.major !== "null" && <p className="playerStatTitles quote">Major: <span className="statStyle ">{trophyWinner.major}</span></p>}
             </div>
           </div>
