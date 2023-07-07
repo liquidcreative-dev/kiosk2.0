@@ -20,7 +20,7 @@ const StatsComponent = ({ trophyWinner, onClose }) => {
             {trophyWinner.hometown && trophyWinner.hometown !== "null" && <p className="playerStatTitles quote">Hometown: <span className="statStyle ">{trophyWinner.hometown}</span></p>}
             {trophyWinner.prevSchool && trophyWinner.prevSchool !== "null" && <p className="playerStatTitles quote">Previous School: <span className="statStyle ">{trophyWinner.prevSchool}</span></p>}
             {trophyWinner.position && trophyWinner.position !== "null" && <p className="playerStatTitles quote">Position: <span className="statStyle ">{trophyWinner.position}</span></p>}
-            {trophyWinner.highschool && trophyWinner.highschool !== "null" && <p className="playerStatTitles quote">Highschool: <span className="statStyle ">{trophyWinner.highSchool}</span></p>}
+            {trophyWinner.highschool && trophyWinner.highschool !== "null" && <p className="playerStatTitles quote">Highschool: <span className="statStyle ">{trophyWinner.highschool}</span></p>}
             {trophyWinner.major && trophyWinner.major !== "null" && <p className="playerStatTitles quote">Major: <span className="statStyle ">{trophyWinner.major}</span></p>}
             </div>
           </div>
