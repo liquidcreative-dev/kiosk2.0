@@ -25,6 +25,7 @@ const AwardsPage = () => {
   return (
     <div className="awardPage">
       <div className="bg-dark awardBackground" >
+      <Link to={`/strapi/admin`} className="text-decoration-none" />
         <MSHFWhiteLogo className="img-fluid whiteLogoAwards" />
         <div className="row row-cols-1 row-cols-sm-3 row-cols-md-4 awards" >
           {awards.data && awards.data.length > 0 && awards.data.map((award) => (
