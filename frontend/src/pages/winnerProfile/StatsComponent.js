@@ -13,7 +13,7 @@ const StatsComponent = ({ trophyWinner, onClose }) => {
             <h2 className={`jerseyNum text-center mt-5 athleticFont ${trophyWinner.sport === 'baseball' ? 'jerseyNumWhite' : ''}`}>{trophyWinner.jerseyNum}</h2>
 
             <p className= "athleticFont athleteName">{trophyWinner.firstName} {trophyWinner.lastName}</p>
-            <div style={{overflow: 'auto', maxHeight: '200px'}}>
+            <div className="historyScroll" style={{overflow: 'auto', maxHeight: '200px'}}>
             {trophyWinner.class && trophyWinner.class !== "null" && <p className="playerStatTitles quote mt-1">Class: <span className="statStyle mt-1">{trophyWinner.class}</span></p>}
             {trophyWinner.heightInFeet && trophyWinner.heightInFeet !== "null" && trophyWinner.heightInInches && trophyWinner.heightInInches !== "null" && <p className="playerStatTitles quote">Height: <span className="statStyle ">{trophyWinner.heightInFeet}'</span><span className="statStyle ">{trophyWinner.heightInInches}"</span></p>}
             {trophyWinner.weight && trophyWinner.weight !== "null" && <p className="playerStatTitles quote">Weight: <span className="statStyle ">{trophyWinner.weight}</span></p>}
@@ -32,7 +32,7 @@ const StatsComponent = ({ trophyWinner, onClose }) => {
             {/* <ReactMarkdown className="card-text statsText" style={{overflow: 'auto', maxHeight: '400px'}}>
               {trophyWinner.stats}
             </ReactMarkdown> */}
-            {trophyWinner.stats && trophyWinner.stats !== "null" && <ReactMarkdown className="card-text statsText" style={{overflow: 'auto', maxHeight: '200px'}}>{trophyWinner.stats}
+            {trophyWinner.stats && trophyWinner.stats !== "null" && <ReactMarkdown className="card-text historyScroll" style={{overflow: 'auto', maxHeight: '200px'}}>{trophyWinner.stats}
             </ReactMarkdown>}
           </div>
         </div>

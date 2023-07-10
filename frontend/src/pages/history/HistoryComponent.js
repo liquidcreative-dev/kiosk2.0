@@ -16,7 +16,7 @@ const HistoryComponent = ({ award, onClose }) => {
             <button className="btn btn-light position-absolute top-0 end-0 componentButton" onClick={onClose}>X</button>
 
             <h5 className="card-title text-center historyComponentTitle athleticFont">-HISTORY-</h5>
-            <div className="historyScroll" style={{ overflowY: 'auto', maxHeight: '600px' }}>
+            <div className="historyScroll" style={{ overflowY: 'auto', maxHeight: '500px' }}>
             <ReactMarkdown className="card-text awardHistoryText text-lowercase" style={{ textTransform: 'none', fontFamily: 'sans-serif' }}>
   {award.data.attributes.history}
 </ReactMarkdown>

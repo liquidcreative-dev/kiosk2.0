@@ -33,7 +33,7 @@ const FinalistsComponent = ({ awardId, yearId, onClose }) => {
               <p className="finalistsTitle text-center athleticFont">-FINALIST-</p>
               <button className="btn btn-light position-absolute top-0 end-0 componentButton" onClick={onClose}>X</button>
             </div>
-            <div className="card-body" style={{overflow: 'auto', maxHeight: '600px'}}>
+            <div className="historyScroll" style={{ overflowY: 'auto', maxHeight: '600px' }}>
               {finalists.map((finalist, index) => (
                 <div key={index}>
                   <p className='finalistsName d-inline'>{finalist.attributes.firstName} {finalist.attributes.lastName}, </p>
