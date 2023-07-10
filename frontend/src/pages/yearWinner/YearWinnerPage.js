@@ -50,7 +50,7 @@ const YearWinnerPage = () => {
   console.log(URL);
 
   return (
-    <div className="container-fluid bg-dark yearWinnerImage" style={{ backgroundImage: `url(${winner?.attributes.imageLink})`}}>
+    <div className="container-fluid bg-dark yearWinnerImage" style={{ backgroundImage: `url(${winner?.attributes.imageLink})` }}>
       <MSHFWhiteLogo className="img-fluid position-absolute top-0 end-0 whiteLogo" />
       <div className="row justify-content-between">
         <div className="col-md-4">
@@ -82,12 +82,17 @@ const YearWinnerPage = () => {
         <div className="col-md-4 text-white text-uppercase buttonContainerWinner athleticFont">
           <button
             className="btn w-75 mb-2 btnStyle winnerButton"
-            onClick={() => navigate(`/profile/${winner.id}`)}
+            onClick={() => navigate(`/profile/${winner.id}`, { state: { awardId, yearId } })}
           >
             Profile
           </button>
+
           <button className="btn w-75 mb-2 btnStyle yellowBtn" onClick={() => setShowFinalists(true)}>Finalists</button>
-          <button className="btn w-75 mb-2 btnStyle yellowBtn1" onClick={() => navigate('/awards')}>Menu</button>
+          <button className="btn w-75 mb-2 btnStyle yellowBtn1" onClick={() => { showFinalists ? setShowFinalists(false) : navigate(`/awards/${awardId}`) }}>
+            Back
+          </button>
+
+          {/* <button className="btn w-75 mb-2 btnStyle yellowBtn1" onClick={() => navigate('/awards')}>Menu</button> */}
         </div>
       </div>
 

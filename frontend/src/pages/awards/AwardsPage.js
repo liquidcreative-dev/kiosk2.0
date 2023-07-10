@@ -25,8 +25,9 @@ const AwardsPage = () => {
   return (
     <div className="awardPage">
       <div className="bg-dark awardBackground" >
-      <Link to={`/strapi/admin`} className="text-decoration-none" />
+      <Link to={`https://lobster-app-6xzrh.ondigitalocean.app/strapi/admin`} className="text-decoration-none" >
         <MSHFWhiteLogo className="img-fluid whiteLogoAwards" />
+        </Link>
         <div className="row row-cols-1 row-cols-sm-3 row-cols-md-4 awards" >
           {awards.data && awards.data.length > 0 && awards.data.map((award) => (
             <div key={award.id} className="col" style={{margin: "0", padding: "0"}}>

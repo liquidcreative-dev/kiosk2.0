@@ -15,7 +15,8 @@ const YearComponent = ({ award, onClose }) => {
           <div className="card-body position-relative">
             <button className="btn btn-light position-absolute top-0 end-0 componentButton" onClick={onClose}>X</button>
             <h5 className="yearCardTitle text-center athleticFont">-YEAR-</h5>
-            <div className="row" style={{ overflow: 'auto', maxHeight: '400px' }}>
+            {/* <div className="row" style={{ overflow: 'auto', maxHeight: '400px' }}> */}
+            <div className=" row historyScroll" style={{ overflowY: 'auto', maxHeight: '500px' }}>
               {award.data.attributes.years &&
                 award.data.attributes.years.data.length > 0 &&
                 [...award.data.attributes.years.data]
