@@ -23,7 +23,7 @@ const AwardsPage = () => {
 
 
   return (
-    <div className="awardPage">
+    <div className="awardPage bg-dark">
       <div className="bg-dark awardBackground" >
       <Link to={`https://lobster-app-6xzrh.ondigitalocean.app/strapi/admin`} className="text-decoration-none" >
         <MSHFWhiteLogo className="img-fluid whiteLogoAwards" />
@@ -45,6 +45,7 @@ const AwardsPage = () => {
           ))}
         </div>
       </div>
+      <div className="container"><div className= "row text-center text-uppercase text-white"><p className="mt-3 awardPageText">touch a trophy to start</p></div></div>
     </div>
   );
 };
