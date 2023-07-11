@@ -1,6 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect} from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { ReactComponent as MSHFWhiteLogo } from '../../public/images/sports_hall_logo_white.svg';
 import { config } from './constants';
 const URL = config.url
@@ -8,6 +8,7 @@ const URL = config.url
 
 const AwardsPage = () => {
   const [awards, setAwards] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(`${URL}/api/awards?populate=*`)
@@ -45,8 +46,9 @@ const AwardsPage = () => {
           ))}
         </div>
       </div>
-      <div className="container">
+      <div className="flex-container">
         <div className="row text-center text-uppercase text-white forMargin">
+        <button className="btn my-2 btnStyle backBtn flex-start" onClick={() => navigate('/')}>Back</button>
           <p className="mt-3 awardPageText">touch a trophy to start</p>
         </div>
       </div>
