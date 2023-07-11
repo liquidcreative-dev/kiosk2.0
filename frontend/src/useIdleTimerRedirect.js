@@ -1,13 +1,13 @@
 import { useEffect, useRef, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const useIdleTimerRedirect = (warningTime = 90000) => {
+const useIdleTimerRedirect = (warningTime = 120000) => {
   const navigate = useNavigate();
   const warnTimeout = useRef();
   const logoutTimeout = useRef();
 
   const warn = () => {
-    alert('You will be logged out automatically in 1 minute.');
+    alert('Are you still here?');
   };
 
   const logout = () => {
