@@ -25,12 +25,12 @@ const AwardsPage = () => {
   return (
     <div className="awardPage bg-dark">
       <div className="bg-dark awardBackground" >
-      <Link to={`https://lobster-app-6xzrh.ondigitalocean.app/strapi/admin`} className="text-decoration-none" >
-        <MSHFWhiteLogo className="img-fluid whiteLogoAwards" />
+        <Link to={`https://lobster-app-6xzrh.ondigitalocean.app/strapi/admin`} className="text-decoration-none" >
+          <MSHFWhiteLogo className="img-fluid whiteLogoAwards" />
         </Link>
         <div className="row row-cols-1 row-cols-sm-3 row-cols-md-4 awards" >
           {awards.data && awards.data.length > 0 && awards.data.map((award) => (
-            <div key={award.id} className="col" style={{margin: "0", padding: "0"}}>
+            <div key={award.id} className="col" style={{ margin: "0", padding: "0" }}>
               <Link to={`/awards/${award.id}`} className="text-decoration-none" >
                 <div className="bg-dark img-fluid awardBanner" style={{ backgroundImage: `url(${award?.attributes.selectImageLink})` }}>
                   <img src={award.attributes.iconLink} className="awardIcon" alt="award-icon" />
@@ -45,7 +45,11 @@ const AwardsPage = () => {
           ))}
         </div>
       </div>
-      <div className="container"><div className= "row text-center text-uppercase text-white"><p className="mt-3 awardPageText">touch a trophy to start</p></div></div>
+      <div className="container">
+        <div className="row text-center text-uppercase text-white forMargin">
+          <p className="mt-3 awardPageText">touch a trophy to start</p>
+        </div>
+      </div>
     </div>
   );
 };

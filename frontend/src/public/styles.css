@@ -164,6 +164,10 @@
     font-weight: lighter;
 }
 
+.forMargin {
+    padding-bottom:200px;
+}
+
 .historyBackground {
     background-color: #212529;
     position: absolute;
