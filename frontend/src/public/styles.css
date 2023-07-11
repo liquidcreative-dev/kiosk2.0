@@ -105,6 +105,7 @@
     /* width: 195vh; */
     /* position: relative; */
     width: 100%;
+    background-repeat: no-repeat;
 }
 
 
@@ -114,6 +115,8 @@
     width: 100%;
     position: relative;
     /* margin-top: -10%; */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
     
 }
 .awards {
