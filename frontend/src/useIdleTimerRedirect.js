@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const useIdleTimerRedirect = (warningTime = 90000) => {
-  const history = useHistory();
+  const navigate = useNavigate();
   const warnTimeout = useRef();
   const logoutTimeout = useRef();
 
@@ -11,7 +11,8 @@ const useIdleTimerRedirect = (warningTime = 90000) => {
   };
 
   const logout = () => {
-    history.push('/');
+    // This is where you'd normally dispatch a redux action for user logout
+    navigate('/');
   };
 
   const resetTimer = () => {
