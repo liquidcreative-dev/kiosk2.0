@@ -8,8 +8,11 @@ import WinnerProfilePage from './pages/winnerProfile/WinnerProfilePage';
 import Highlights from './pages/highlights/Highlights';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './public/styles.css';
+import useIdleTimerRedirect from './useIdleTimerRedirect';
+
 
 const App = () => {
+  useIdleTimerRedirect();
   return (
     <Router>
       <Routes>
