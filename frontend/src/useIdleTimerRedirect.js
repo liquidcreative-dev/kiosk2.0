@@ -6,14 +6,14 @@ const useIdleTimerRedirect = (warningTime = 120000) => {
   const warnTimeout = useRef();
   const logoutTimeout = useRef();
 
-  const warn = () => {
+  const warn = useCallback(() => {
     alert('Are you still here?');
-  };
+  }, []);
 
-  const logout = () => {
+  const logout = useCallback(() => {
     // This is where you'd normally dispatch a redux action for user logout
     navigate('/');
-  };
+  }, [navigate]);
 
   const resetTimer = useCallback(() => {
     clearTimeout(warnTimeout.current);
@@ -21,7 +21,7 @@ const useIdleTimerRedirect = (warningTime = 120000) => {
 
     warnTimeout.current = setTimeout(warn, warningTime);
     logoutTimeout.current = setTimeout(logout, warningTime + 60000);
-  }, [warningTime]);
+  }, [warningTime, warn, logout]);
 
   useEffect(() => {
     const events = [
