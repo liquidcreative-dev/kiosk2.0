@@ -107,7 +107,6 @@ console.log(award);
             }
           </div>
         </div>
-      </div>
     </>
   );
 };
