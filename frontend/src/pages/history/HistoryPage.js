@@ -53,7 +53,8 @@ console.log(award);
   return (
     <>
       <div className=' historyBackground'>
-      <img src={award?.data.attributes.trophyImageLink} alt="" className="container-fluid  historyTrophyImage " />
+      // <img src={award?.data.attributes.trophyImageLink} alt="" className="container-fluid  historyTrophyImage " />
+    
         <div className="container-fluid historyStuff" >
           <MSHFWhiteLogo className="img-fluid position-absolute top-0 end-0 whiteLogo" />
           <div className="row ">
