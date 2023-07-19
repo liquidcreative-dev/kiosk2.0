@@ -72,6 +72,7 @@ console.log(award);
           </div>
         </div>
       </div>
+  </div>
           <MSHFWhiteLogo className="img-fluid position-absolute top-0 end-0 whiteLogo" />
           <div className="row ">
             {award && award.data ?
