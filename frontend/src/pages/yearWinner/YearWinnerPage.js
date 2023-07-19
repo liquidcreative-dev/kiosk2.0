@@ -57,7 +57,7 @@ const YearWinnerPage = () => {
           <div className="card text-white yearWinnerBanner">
             <div className="card-body d-flex justify-content-between align-items-center">
               <div>
-                <h1 className="yearBannerText athleticFont">{awardData?.attributes.name}</h1>
+                <h1 className="yearBannerText athleticFont pt-3">{awardData?.attributes.name}</h1>
                 <div>
                   <p className="card-text d-inline yearBannerYear">WINNER {yearData?.data.attributes.awardYear}</p>
                   <img className='text-uppercase bannerIcon d-inline' src={awardData?.attributes?.iconLink} alt="icon" />
