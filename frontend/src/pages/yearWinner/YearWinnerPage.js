@@ -71,7 +71,7 @@ const YearWinnerPage = () => {
 
       <div className="col">
         <div className="col-md-4 text-white text-uppercase justify-content-center align-items-center winnerInfo">
-          <img src={winner?.attributes.schoolLogoLink} alt="school-logo" className="my-4 img-fluid schoolLogo" />
+          <img src={winner?.attributes.schoolLogoLink} alt="school-logo" className="my-4 img-fluid" />
           {winner &&
             <div>
               <h3 className="yearWinnerText athleticFont">{winner.attributes.firstName} {winner.attributes.lastName}</h3>
