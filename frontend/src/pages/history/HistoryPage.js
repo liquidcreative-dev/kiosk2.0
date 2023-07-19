@@ -73,7 +73,7 @@ console.log(award);
               <div>
                 <h1 className="yearBannerText athleticFont">{winner.award?.data?.attributes?.name}</h1>
               </div>
-              <img src={winner.award?.data?.attributes?.sponsorLogoLink} alt="sponsor-logo" className="my-4 img-fluid sponsorLogo" style={{maxWidth: 'fit-content'}} />
+              <img src={award.data.attributes.sponsorLogoLink} alt="sponsor-logo" className="my-4 img-fluid sponsorLogo" style={{maxWidth: 'fit-content'}} />
             </div>
           </div>
         </div>
