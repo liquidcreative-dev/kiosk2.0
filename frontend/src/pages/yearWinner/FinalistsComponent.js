@@ -30,7 +30,7 @@ const FinalistsComponent = ({ awardId, yearId, onClose }) => {
         <div className="col-md-4">
           <div className="card text-white finalistsComponent">
             <div>
-              <p className="finalistsTitle text-center athleticFont">-FINALIST-</p>
+              <p className="finalistsTitle text-center athleticFont">-FINALISTS-</p>
               <button className="btn btn-light position-absolute top-0 end-0 componentButton" onClick={onClose}>X</button>
             </div>
             <div className="historyScroll" style={{ overflowY: 'auto', maxHeight: '600px' }}>
