@@ -25,7 +25,7 @@ const AwardsPage = () => {
 
   return (
     <div className="awardPage bg-dark">
-      <div className="bg-dark awardBackground" style={{  backgroundSize: 'cover' }} >
+      <div className="bg-dark awardBackground">
         <Link to={`https://lobster-app-6xzrh.ondigitalocean.app/strapi/admin`} className="text-decoration-none" >
           <MSHFWhiteLogo className="img-fluid whiteLogoAwards" />
         </Link>
@@ -34,7 +34,7 @@ const AwardsPage = () => {
             <div key={award.id} className="col" style={{ margin: "0", padding: "0" }}>
               <Link to={`/awards/${award.id}`} className="text-decoration-none" >
                 <div className="bg-dark img-fluid awardBanner" style={{ backgroundImage: `url(${award?.attributes.selectImageLink})` }}>
-                  <img src={award.attributes.iconLink} className="awardIcon" alt="award-icon" />
+                  <img src={award.attributes.iconLink} className="awardIcon" alt="award-icon"  style={{  backgroundSize: 'cover' }} />
                   <div className="trophyName text-uppercase text-white display-flex">
                     <p className="awardNameFull athleticFont">{award.attributes.name}</p><span className="firstNameText">Trophy</span>
                   </div>
