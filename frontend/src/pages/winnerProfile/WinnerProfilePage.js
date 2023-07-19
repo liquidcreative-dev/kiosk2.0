@@ -35,7 +35,7 @@ const WinnerProfilePage = () => {
           <div className="card text-white yearWinnerBanner">
             <div className="card-body d-flex justify-content-between align-items-center">
               <div>
-                <h1 className="yearBannerText athleticFont">{winner.award?.data?.attributes?.name}</h1>
+                <h1 className="yearBannerText athleticFont pt-3">{winner.award?.data?.attributes?.name}</h1>
                 <div>
                   <p className="card-text d-inline yearBannerYear">WINNER {winner.years?.data[0]?.attributes?.awardYear}</p>
                   <img className='text-uppercase bannerIcon d-inline' src={winner.award?.data?.attributes?.iconLink} alt="icon"/>
