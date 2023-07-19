@@ -71,11 +71,11 @@ const YearWinnerPage = () => {
 
       <div className="col">
         <div className="col-md-4 text-white text-uppercase justify-content-center align-items-center winnerInfo">
-          <img src={winner?.attributes.schoolLogoLink} alt="school-logo" className="my-4 img-fluid text-center" />
+          <img src={winner?.attributes.schoolLogoLink} alt="school-logo" className="my-4 img-fluid text-center schoolLogo" />
           {winner &&
             <div>
-              <h3 className="yearWinnerText athleticFont">{winner.attributes.firstName} {winner.attributes.lastName}</h3>
-              <p className="text-start yearWinnerSubText">{winner.attributes.positionFullName}</p>
+              <h3 className="yearWinnerText athleticFont text-center">{winner.attributes.firstName} {winner.attributes.lastName}</h3>
+              <p className="text-start yearWinnerSubText text-center">{winner.attributes.positionFullName}</p>
             </div>
           }
         </div>
