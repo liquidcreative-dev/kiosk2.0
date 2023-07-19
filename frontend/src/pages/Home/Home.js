@@ -16,12 +16,12 @@ const Home = () => {
             </div>
             <div className="row justify-content-center align-items-center text-center">
                 <div className="text-white">
-                    <MSHFColorLogo className="img-fluid colorLogo" />
-                    <div >
-                        <span className="theWord">The</span>
-                        <span className=" text-uppercase homeText athleticFont">Outstanding</span>
-                        <h4 className="text-uppercase homeText athleticFont">Player Awards</h4>
-                    </div>
+                    // <MSHFColorLogo className="img-fluid colorLogo" />
+                    // <div >
+                    //     <span className="theWord">The</span>
+                    //     <span className=" text-uppercase homeText athleticFont">Outstanding</span>
+                    //     <h4 className="text-uppercase homeText athleticFont">Player Awards</h4>
+                    // </div>
                     <button className="btn btnStyle btnHome athleticFont" onClick={() => navigate("/awards")}>Let's Go</button>
                 </div>
             </div>
