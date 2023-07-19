@@ -55,7 +55,6 @@ const WinnerProfilePage = () => {
       </div>
         <div className="col-md-4 text-white text-uppercase profileContainer athleticFont">
           <button className="btn mb-2 btnStyle winnerButton1" onClick={() => setShowStats(true)}>Stats</button>
-          // <button className="btn mb-2 btnStyle profileButton" onClick={() => navigate(`/highlights/${athleteId}`)}>Highlights</button>
           {/* <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => navigate('/awards')}>Menu</button> */}
           <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => {showStats ? setShowStats(false) : navigate(`/awards/${awardId}/years/${yearId}`)}}>Back</button>
 
