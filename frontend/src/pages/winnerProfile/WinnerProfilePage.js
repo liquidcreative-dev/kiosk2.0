@@ -24,7 +24,7 @@ const WinnerProfilePage = () => {
       });
   }, [athleteId]);
 
-  const [showStats, setShowStats] = useState(false);
+  const [showStats, setShowStats] = useState(true);
   console.log(winner)
 
   return (
