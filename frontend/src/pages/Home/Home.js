@@ -21,7 +21,6 @@ const Home = () => {
                     <button className="btn btnStyle btnHome athleticFont" onClick={() => navigate("/awards")}>Let's Go</button>
                 </div>
             </div>
-        </div>
     );
 };
 
