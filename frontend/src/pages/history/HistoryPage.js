@@ -62,10 +62,22 @@ console.log(award);
             {award && award.data ?
               <>
 
-                <div className="card-body text-white historyBanner" >
-                <h1 className="card-title text-uppercase bannerFullName athleticFont">{award.data.attributes.name}</h1>
-                  <p className="text-uppercase bannerFirstName">Trophy</p>
-                </div>
+                // <div className="card-body text-white historyBanner" >
+                // <h1 className="card-title text-uppercase bannerFullName athleticFont">{award.data.attributes.name}</h1>
+                //   <p className="text-uppercase bannerFirstName">Trophy</p>
+                // </div>
+        <div className="row justify-content-between">
+        <div className="col-md-4">
+          <div className="card text-white yearWinnerBanner">
+            <div className="card-body d-flex justify-content-between align-items-center">
+              <div>
+                <h1 className="yearBannerText athleticFont">{winner.award?.data?.attributes?.name}</h1>
+              </div>
+              <img src={winner.award?.data?.attributes?.sponsorLogoLink} alt="sponsor-logo" className="my-4 img-fluid sponsorLogo" style={{maxWidth: 'fit-content'}} />
+            </div>
+          </div>
+        </div>
+      </div>
                 <div className={`iconContainer ${componentToShow ? 'stretchedIconContainer' : ''}`} >
                 <p className="flex-start text-white text-uppercase historySport athleticFont">
   {award.data.attributes.sport.replace(/\s*\((M|W)\)/g, '')}
