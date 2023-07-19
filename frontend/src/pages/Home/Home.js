@@ -12,7 +12,7 @@ const Home = () => {
             <div className="row h-100 position-absolute w-100 homeBackground">
                 <div className="col-md-2 yellowBanner"></div>
                 <div className="col-md-10 p-0">
-                    <img src={GirlAthlete} className="img-fluid h-100 w-100" alt="Girl Athlete" />
+                    <img src={StartImg} className="img-fluid h-100 w-100" alt="Girl Athlete" />
                 </div>
             </div>
             <div className="row justify-content-center align-items-center text-center">
