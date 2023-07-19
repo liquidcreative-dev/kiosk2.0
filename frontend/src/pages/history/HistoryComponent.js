@@ -9,7 +9,7 @@ const HistoryComponent = ({ award, onClose }) => {
     <div className="card mb-3 historyComponent text-white" style={{ maxHeight: '800px' }}>
       <div className="row g-0">
         <div className="col-md-6">
-          <img src={award.data.attributes.historyImageLink} alt="History" className="img-fluid historyImage" style={{ width: '100%' }} />
+          <img src={award.data.attributes.historyImageLink} alt="History" className="img-fluid historyImage" />
         </div>
         <div className="col-md-6">
           <div className="card-body position-relative">
