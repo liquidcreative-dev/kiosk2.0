@@ -8,7 +8,7 @@ const Home = () => {
 
     return (
         <div className="container-fluid" style={{height: '100vh'}}>
-                    <img src={StartImg} className="img-fluid h-100 w-100" alt="sports background" />
+                    <img src={StartImg} className="img-fluid" alt="sports background" />
                 </div>
             <div className="row justify-content-center align-items-center text-center">
                 <div className="text-white">
