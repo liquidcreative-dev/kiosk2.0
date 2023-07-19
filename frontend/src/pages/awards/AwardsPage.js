@@ -25,7 +25,7 @@ const AwardsPage = () => {
 
   return (
     <div className="awardPage bg-dark">
-      <div className="bg-dark awardBackground" >
+      <div className="bg-dark awardBackground" style={{  backgroundSize: 'cover' }} >
         <Link to={`https://lobster-app-6xzrh.ondigitalocean.app/strapi/admin`} className="text-decoration-none" >
           <MSHFWhiteLogo className="img-fluid whiteLogoAwards" />
         </Link>
