@@ -64,7 +64,6 @@ console.log(award);
                 <div className="card-body text-white historyBanner" >
                 <h1 className="card-title text-uppercase bannerFullName athleticFont">{award.data.attributes.name}</h1>
                   <p className="text-uppercase bannerFirstName">Trophy</p>
-  <img src={winner.award?.data?.attributes?.sponsorLogoLink} alt="sponsor-logo" className="my-4 img-fluid sponsorLogo" style={{maxWidth: 'fit-content'}} />
                 </div>
                 <div className={`iconContainer ${componentToShow ? 'stretchedIconContainer' : ''}`} >
                 <p className="flex-start text-white text-uppercase historySport athleticFont">
