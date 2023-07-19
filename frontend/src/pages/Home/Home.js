@@ -8,7 +8,6 @@ const Home = () => {
 
     return (
         <div className="container-fluid" style={{height: '100vh'}}>
-            <div className="row h-100 position-absolute w-100">
                     <img src={StartImg} className="img-fluid h-100 w-100" alt="sports background" />
                 </div>
             <div className="row justify-content-center align-items-center text-center">
