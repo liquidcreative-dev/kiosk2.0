@@ -50,8 +50,8 @@ const WinnerProfilePage = () => {
       
       <div className="col-md-4 text-white text-uppercase align-items-left profileInfo">
           <img src={winner.schoolLogoLink} alt="school-logo" className="my-4 img-fluid align-items-center" />
-          <p className="profileText athleticFont">{winner.firstName} {winner.lastName}</p>
-          <p className="profileSubText">{winner.positionFullName}</p>
+          <p className="yearWinnerText athleticFont">{winner.firstName} {winner.lastName}</p>
+          <p className="yearWinnerSubText">{winner.positionFullName}</p>
       </div>
         <div className="col-md-4 text-white text-uppercase profileContainer athleticFont">
           <button className="btn mb-2 btnStyle winnerButton1" onClick={() => setShowStats(false)}>Stats</button>
