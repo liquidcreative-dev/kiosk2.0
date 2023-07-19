@@ -56,23 +56,7 @@ console.log(award);
       <img src={award?.data.attributes.trophyImageLink} alt="" className="" />
   </div>
         <div className="container-fluid historyStuff" >
-  <MSHFWhiteLogo className="img-fluid position-absolute top-0 end-0 whiteLogo" />
-      <div className="row justify-content-between">
-        <div className="col-md-4">
-          <div className="card text-white yearWinnerBanner">
-            <div className="card-body d-flex justify-content-between align-items-center">
-              <div>
-                <h1 className="yearBannerText athleticFont">{awardData?.attributes.name}</h1>
-                <div>
-                  <img className='text-uppercase bannerIcon d-inline' src={awardData?.attributes?.iconLink} alt="icon" />
-                </div>
-              </div>
-              <img src={awardData?.attributes?.sponsorLogoLink} alt="sponsor-logo" className="my-4 img-fluid sponsorLogo" style={{ maxWidth: 'fit-content' }} />
-            </div>
-          </div>
-        </div>
-      </div>
-  </div>
+
           <MSHFWhiteLogo className="img-fluid position-absolute top-0 end-0 whiteLogo" />
           <div className="row ">
             {award && award.data ?
