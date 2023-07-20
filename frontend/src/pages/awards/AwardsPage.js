@@ -36,7 +36,8 @@ const AwardsPage = () => {
                 <div className="bg-dark img-fluid awardBanner" style={{ backgroundImage: `url(${award?.attributes.selectImageLink})` }}>
                   <img src={award.attributes.iconLink} className="awardIcon" alt="award-icon"  style={{  backgroundSize: 'cover' }} />
                   <div className="trophyName text-uppercase text-white display-flex">
-                    <p className="awardNameFull athleticFont">{award.attributes.name}</p><span className="firstNameText">Trophy</span>
+                    <p className="awardNameFull athleticFont">{award.attributes.name}</p>
+                    <p className="firstNameText d-inline">Trophy</p>
                   </div>
 
                 </div>
