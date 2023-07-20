@@ -396,14 +396,14 @@
 .yearBannerText {
     font-size: 110px;
     font-weight: 800;
-    margin-left: 20px;
+/*     margin-left: 20px; */
     letter-spacing: 10px;
     line-height: .75;
 }
 .yearBannerYear{
     font-size: 40px;
     font-weight: lighter;
-    margin-left: 20px;
+/*     margin-left: 20px; */
     letter-spacing: 5px;
     line-height: .75;
     font-family: sans-serif;
