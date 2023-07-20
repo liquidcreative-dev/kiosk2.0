@@ -7,11 +7,11 @@ const HistoryComponent = ({ award, onClose }) => {
   return (
     <>
     <div className="card mb-3 historyComponent text-white" style={{ maxHeight: '800px' }}>
-      <div className="row g-0">
-        <div className="col-md-7">
+      <div className="row">
+        <div className="col-md-4">
           <img src={award.data.attributes.historyImageLink} alt="History" className="img-fluid historyImage" />
         </div>
-        <div className="col-md-5">
+        <div className="col-md-8">
           <div className="card-body position-relative">
             <button className="btn btn-light position-absolute top-0 end-0 componentButton" onClick={onClose}>X</button>
 
