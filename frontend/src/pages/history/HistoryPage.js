@@ -61,17 +61,13 @@ console.log(award);
           <div className="row ">
             {award && award.data ?
               <>
-
-                // <div className="card-body text-white historyBanner" >
-                // <h1 className="card-title text-uppercase bannerFullName athleticFont">{award.data.attributes.name}</h1>
-                // </div>
         <div className="row justify-content-between">
         <div className="col-md-4">
           <div className="card text-white yearWinnerBanner">
             <div className="card-body d-flex justify-content-between align-items-center">
               <div>
                 <h1 className="yearBannerText athleticFont">{award.data.attributes.name}</h1>
-                  <p className="text-uppercase bannerFirstName">Trophy</p>
+                  <p className="text-uppercase bannerFirstName ps-5">Trophy</p>
               </div>
               <img src={award.data.attributes.sponsorLogoLink} alt="sponsor-logo" className="my-4 img-fluid sponsorLogo" style={{maxWidth: 'fit-content'}} />
             </div>
