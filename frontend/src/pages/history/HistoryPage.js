@@ -66,7 +66,7 @@ console.log(award);
           <div className="card text-white yearWinnerBanner">
             <div className="card-body d-flex justify-content-between align-items-center">
               <div>
-                <h1 className="yearBannerText athleticFont">{award.data.attributes.name}</h1>
+                <h1 className="yearBannerText athleticFont pt-3">{award.data.attributes.name}</h1>
                   <p className="text-uppercase bannerFirstName ps-5">Trophy</p>
               </div>
               <img src={award.data.attributes.sponsorLogoLink} alt="sponsor-logo" className="my-4 img-fluid sponsorLogo" style={{maxWidth: 'fit-content'}} />
