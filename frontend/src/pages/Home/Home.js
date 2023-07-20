@@ -10,8 +10,7 @@ const Home = () => {
     <>
         <div className="container-fluid position-relative" style={{height: '100vh'}}>
             <div className="row h-100 position-absolute w-100 homeBackground">
-                <div className="col-md-2 yellowBanner"></div>
-                <div className="col-md-10 p-0">
+                <div className="col-md-12 p-0">
                     <img src={StartImg} className="img-fluid h-100 w-100" alt="Girl Athlete" />
                 </div>
             </div>
