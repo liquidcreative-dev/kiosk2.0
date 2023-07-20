@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import HistoryComponent from './HistoryComponent';
 import YearComponent from './YearComponent';
@@ -64,7 +64,6 @@ console.log(award);
 
                 // <div className="card-body text-white historyBanner" >
                 // <h1 className="card-title text-uppercase bannerFullName athleticFont">{award.data.attributes.name}</h1>
-                //   <p className="text-uppercase bannerFirstName">Trophy</p>
                 // </div>
         <div className="row justify-content-between">
         <div className="col-md-4">
@@ -72,6 +71,7 @@ console.log(award);
             <div className="card-body d-flex justify-content-between align-items-center">
               <div>
                 <h1 className="yearBannerText athleticFont">{award.data.attributes.name}</h1>
+                  <p className="text-uppercase bannerFirstName">Trophy</p>
               </div>
               <img src={award.data.attributes.sponsorLogoLink} alt="sponsor-logo" className="my-4 img-fluid sponsorLogo" style={{maxWidth: 'fit-content'}} />
             </div>
