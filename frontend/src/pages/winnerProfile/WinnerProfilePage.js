@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams, useLocation  } from 'react-router-dom';
+import { useNavigate, useParams, useLocation, Link  } from 'react-router-dom';
 import StatsComponent from './StatsComponent';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
 // import { config } from '../components/constants';
@@ -25,6 +25,8 @@ const WinnerProfilePage = () => {
   }, [athleteId]);
 
   const [showStats, setShowStats] = useState(true);
+
+
   console.log(winner)
 
   return (
@@ -56,9 +58,9 @@ const WinnerProfilePage = () => {
         <div className="col-md-4 text-white text-uppercase profileContainer athleticFont">
           <button className="btn mb-2 btnStyle winnerButton1" onClick={() => setShowStats(false)}>Stats</button>
           {/* <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => navigate('/awards')}>Menu</button> */}
-          <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => {showStats ? setShowStats(false) : navigate(`/awards/${awardId}/years/${yearId}`)}}>Back</button>
-
-
+          <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => {navigate(`/awards/${awardId}/years/${yearId}`)}}>Back</button>
+        
+          <Link to="/" className="btn mb-2 btnStyle yellowBtnProfile">start over</Link>
         </div>
   
       {showStats && <StatsComponent trophyWinner={winner} onClose={() => setShowStats(false)} />}
