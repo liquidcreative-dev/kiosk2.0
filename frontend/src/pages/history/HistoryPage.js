@@ -1,5 +1,5 @@
  import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, Link } from 'react-router-dom';
 import HistoryComponent from './HistoryComponent';
 import YearComponent from './YearComponent';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
@@ -99,6 +99,7 @@ console.log(award);
                     onClick={handleNavigation}>
                     {componentToShow ? 'Back' : 'Menu'}
                   </button>
+                  <Link to="/" className={`btn btnStyle mb-2 btnStyleHistory1 ${componentToShow ? 'stretched' : ''}`}>start over</Link>
                 </div>
 
 

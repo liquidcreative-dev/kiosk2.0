@@ -122,12 +122,6 @@
       "relation": "oneToOne",
       "target": "api::school.school"
     },
-    "heightInFeet": {
-      "type": "integer"
-    },
-    "heightInInches": {
-      "type": "integer"
-    },
     "positionFullName": {
       "type": "enumeration",
       "enum": [
@@ -173,6 +167,14 @@
     },
     "schoolLogoLink": {
       "type": "string"
+    },
+    "heightInFeet": {
+      "type": "string",
+      "default": "null"
+    },
+    "heightInInches": {
+      "type": "string",
+      "default": "null"
     }
   }
 }

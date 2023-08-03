@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate, useParams, Link } from 'react-router-dom';
 import FinalistsComponent from './FinalistsComponent';
 
 
@@ -91,7 +91,7 @@ const YearWinnerPage = () => {
           <button className="btn w-75 mb-2 btnStyle yellowBtn1" onClick={() => { showFinalists ? setShowFinalists(false) : navigate(`/awards/${awardId}`) }}>
             Back
           </button>
-
+          <Link to="/" className="btn w-75 mb-2 btnStyle yellowBtn1" >start over</Link>
           {/* <button className="btn w-75 mb-2 btnStyle yellowBtn1" onClick={() => navigate('/awards')}>Menu</button> */}
         </div>
       </div>
