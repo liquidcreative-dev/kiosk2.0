@@ -55,7 +55,7 @@ const WinnerProfilePage = () => {
           <p className="yearWinnerText athleticFont text-center">{winner.firstName} {winner.lastName}</p>
           <p className="yearWinnerSubText text-center">{winner.positionFullName}</p>
       </div>
-        <div className="col-md-4 text-white text-uppercase profileContainer athleticFont">
+        <div className="col-md-4 text-white text-uppercase profileContainer athleticFont ">
           <button className="btn mb-2 btnStyle winnerButton1" onClick={() => setShowStats(false)}>Stats</button>
           {/* <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => navigate('/awards')}>Menu</button> */}
           <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => {navigate(`/awards/${awardId}/years/${yearId}`)}}>Back</button>
