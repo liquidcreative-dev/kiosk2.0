@@ -37,7 +37,7 @@ const AwardsPage = () => {
                   <img src={award.attributes.iconLink} className="awardIcon" alt="award-icon"  style={{  backgroundSize: 'cover' }} />
                   <div className="trophyName text-uppercase text-white display-flex">
                     <p className="awardNameFull athleticFont">{award.attributes.name}</p>
-                    <p className="firstNameText d-inline ps-5">Trophy</p>
+                    <p className="firstNameText d-inline mb-5">Trophy</p>
                   </div>
 
                 </div>
