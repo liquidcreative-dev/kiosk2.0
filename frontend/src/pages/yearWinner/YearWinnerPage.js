@@ -69,7 +69,7 @@ const YearWinnerPage = () => {
         </div>
       </div>
 
-      <div className="col">
+      <div className="text-center">
         <div className="col-md-4 text-white text-uppercase justify-content-center align-items-center winnerInfo">
           <img src={winner?.attributes.schoolLogoLink} alt="school-logo" className="my-4 img-fluid text-center schoolLogo" />
           {winner &&
@@ -79,20 +79,14 @@ const YearWinnerPage = () => {
             </div>
           }
         </div>
-        <div className="col-md-4 text-white text-uppercase buttonContainerWinner athleticFont">
-          <button
-            className="btn w-75 mb-2 btnStyle winnerButton"
-            onClick={() => navigate(`/profile/${winner.id}`, { state: { awardId, yearId } })}
-          >
-            Profile
-          </button>
+        <div className="col-md-4 text-white text-uppercase text-center buttonContainerWinner athleticFont">
+          <button className="btn w-75 mb-2 btnStyle winnerButton" onClick={() => navigate(`/profile/${winner.id}`, { state: { awardId, yearId } })}>Profile</button>
 
           <button className="btn w-75 mb-2 btnStyle yellowBtn" onClick={() => setShowFinalists(true)}>Finalists</button>
           <button className="btn w-75 mb-2 btnStyle yellowBtn1" onClick={() => { showFinalists ? setShowFinalists(false) : navigate(`/awards/${awardId}`) }}>
             Back
           </button>
           <Link to="/" className="btn w-75 mb-2 btnStyle yellowBtn1" >start over</Link>
-          {/* <button className="btn w-75 mb-2 btnStyle yellowBtn1" onClick={() => navigate('/awards')}>Menu</button> */}
         </div>
       </div>
 
