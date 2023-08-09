@@ -34,13 +34,13 @@ const StatsComponent = ({ trophyWinner, onClose }) => {
         <div className="col-md-8 goldStats">
           <div className="card-body  position-relative ">
             <h5 className="card-title athleticFont statsTitle">-STATS-</h5>
-          <div className="historyScroll " style={{ overflowY: 'auto', maxHeight: '450px' }}>
+          <div className="historyScroll " style={{ overflowY: 'auto', maxHeight: '400px' }}>
 
             <button className="btn btn-light position-absolute top-0 end-0 statComponentButton" onClick={onClose}>X</button>
             {/* <ReactMarkdown className="card-text statsText" style={{overflow: 'auto', maxHeight: '400px'}}>
               {trophyWinner.stats}
             </ReactMarkdown> */}
-            {trophyWinner.stats && trophyWinner.stats !== "null" && <ReactMarkdown className="card-text" style={{ overflow: 'auto', maxHeight: '500px'}}>{trophyWinner.stats}
+            {trophyWinner.stats && trophyWinner.stats !== "null" && <ReactMarkdown className="card-text">{trophyWinner.stats}
             </ReactMarkdown>}
             </div>
           </div>
