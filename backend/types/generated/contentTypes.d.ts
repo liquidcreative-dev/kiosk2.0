@@ -871,6 +871,7 @@ export interface ApiAthleteAthlete extends Schema.CollectionType {
     schoolLogoLink: Attribute.String;
     heightInFeet: Attribute.String & Attribute.DefaultTo<'null'>;
     heightInInches: Attribute.String & Attribute.DefaultTo<'null'>;
+    Highlights: Attribute.Component<'components.highlights', true>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
