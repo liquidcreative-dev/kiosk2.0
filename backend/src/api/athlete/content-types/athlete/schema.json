@@ -176,6 +176,11 @@
     "heightInInches": {
       "type": "string",
       "default": "null"
+    },
+    "Highlights": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.highlights"
     }
   }
 }
