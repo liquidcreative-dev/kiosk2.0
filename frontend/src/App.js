@@ -5,7 +5,7 @@ import AwardsPage from './pages/awards/AwardsPage';
 import HistoryPage from './pages/history/HistoryPage';
 import YearWinnerPage from './pages/yearWinner/YearWinnerPage';
 import WinnerProfilePage from './pages/winnerProfile/WinnerProfilePage';
-import Highlights from './pages/highlights/Highlights';
+import Highlights from './pages/highlights/HighlightsModal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './public/styles.css';
 // import useIdleTimerRedirect from './useIdleTimerRedirect';
