@@ -179,7 +179,7 @@
     },
     "Highlights": {
       "type": "component",
-      "repeatable": false,
+      "repeatable": true,
       "component": "components.highlights"
     }
   }
