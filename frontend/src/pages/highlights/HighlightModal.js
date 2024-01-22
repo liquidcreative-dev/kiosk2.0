@@ -13,7 +13,7 @@ const HighlightModal = ({ highlights, onClose }) => {
   };
   console.log(highlights);
   return (
-    <div className="card highlight-component mb-3 text-white" style={{ backgroundColor: '#dca101', borderRadius: '25px 0 0 25px', color: 'white', fontSize: '20px' }}>
+    <div className="card highlight-component mb-3">
       <div className="row g-0">
         <div className="col-md-12">
           <div className="card-body position-relative">

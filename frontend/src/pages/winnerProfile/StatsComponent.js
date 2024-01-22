@@ -9,7 +9,6 @@ const StatsComponent = ({ trophyWinner, onClose }) => {
         <div className="col-md-4">
           <div className="card-body position-relative redStats text-white">
             <img src={trophyWinner.award?.data?.attributes?.jerseyIconLink} alt="football-icon" className="img-fluid jerseyStyle" />
-            {/* <h2 className="jerseyNum text-center mt-5 athleticFont">{trophyWinner.jerseyNum}</h2> */}
             <h2 className={`jerseyNum text-center mt-5 athleticFont ${trophyWinner.sport === 'baseball' ? 'jerseyNumWhite' : ''}`}>{trophyWinner.jerseyNum}</h2>
 
             <p className= "athleticFont athleteName">{trophyWinner.firstName} {trophyWinner.lastName}</p>
