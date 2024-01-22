@@ -104,8 +104,8 @@ const Highlights = () => {
       });
   }, [athleteId]);
 
-  const closeHighlightModal = () => {
-    setShowHighlightModal(false);
+  const toggleHighlightModal = () => {
+    setShowHighlightModal(!showHighlightModal);
   };
 
   return (
@@ -140,13 +140,14 @@ const Highlights = () => {
       <div className="row">
         <div className="col-md-4 text-white text-uppercase profileContainer athleticFont ">
           {/* <button className="btn w-75 mb-2 btnStyle winnerButton" onClick={() => navigate(`/profile/${athlete.id}`, { state: { awardId, yearId } })}>Profile</button> */}
+          <button className="btn mb-2 btnStyle winnerButton1" onClick={toggleHighlightModal}>Highlights</button>
           <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => navigate(-1)}>Back</button>
           <Link to="/awards" className="btn mb-2 btnStyle yellowBtnProfile">Start Over</Link>
         </div>
       </div>
 
       {showHighlightModal && (
-        <HighlightModal highlights={athlete?.Highlights || []} onClose={closeHighlightModal} />
+        <HighlightModal highlights={athlete?.Highlights || []} onClose={toggleHighlightModal} />
       )}
     </div>
   );
