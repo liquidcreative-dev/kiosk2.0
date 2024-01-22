@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams, useLocation, Link } from 'react-router-dom';
 import StatsComponent from './StatsComponent';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
-// import { config } from '../components/constants';
 import { config } from './constants';
-const URL = config.url
+
+const URL = config.url;
 
 const WinnerProfilePage = () => {
   const location = useLocation();
@@ -26,8 +26,9 @@ const WinnerProfilePage = () => {
 
   const [showStats, setShowStats] = useState(true);
 
-
-  console.log(winner)
+  const navigateToHighlights = () => {
+    navigate(`/highlights/${athleteId}`);
+  };
 
   return (
     <div className="container-fluid bg-dark yearWinnerImage" style={{ backgroundImage: `url(${winner?.imageLink})`, backgroundSize: 'cover' }}>
@@ -57,23 +58,19 @@ const WinnerProfilePage = () => {
         </div>
         <div className="col-md-7">
           {showStats && <StatsComponent trophyWinner={winner} onClose={() => setShowStats(false)} />}
-
         </div>
       </div>
+      
       <div className="row">
-
-      <div className="col-md-4 text-white text-uppercase profileContainer athleticFont ">
-        <button className="btn mb-2 btnStyle winnerButton1" onClick={() => setShowStats(false)}>Stats</button>
-        {/* <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => navigate('/awards')}>Menu</button> */}
-        <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => { navigate(`/awards/${awardId}/years/${yearId}`) }}>Back</button>
-
-        <Link to="/" className="btn mb-2 btnStyle yellowBtnProfile">start over</Link>
+        <div className="col-md-4 text-white text-uppercase profileContainer athleticFont ">
+          <button className="btn mb-2 btnStyle winnerButton1" onClick={() => setShowStats(!showStats)}>Stats</button>
+          <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={navigateToHighlights}>Highlights</button>
+          <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => { navigate(`/awards/${awardId}/years/${yearId}`) }}>Back</button>
+          <Link to="/" className="btn mb-2 btnStyle yellowBtnProfile">Start Over</Link>
+        </div>
       </div>
-      </div>
-
     </div>
   );
-
 };
 
 export default WinnerProfilePage;

@@ -22,7 +22,9 @@ const HighlightModal = ({ highlights, onClose }) => {
             <div className="historyScroll" style={{ overflowY: 'auto', maxHeight: '400px' }}>
               {highlights.map((highlight, index) => (
                 <div key={index} className="highlight-item mb-3" onClick={() => handleVideoClick(highlight.videoLink)}>
+                  <img className='img-fluid' src={highlight.video} alt="icon" />
                   <h5 className="highlight-title">{highlight.name}</h5>
+                  
                 </div>
               ))}
             </div>
