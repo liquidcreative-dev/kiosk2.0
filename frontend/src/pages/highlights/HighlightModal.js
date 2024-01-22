@@ -23,14 +23,13 @@ const HighlightModal = ({ highlights, onClose }) => {
               {highlights.map((highlight, index) => (
                 <div className="col-md-4 highlight-item mb-3" key={index} onClick={() => handleVideoClick(highlight.videoLink)}>
                   <div className="d-flex justify-content-center align-items-center my-2">
-                    {/* <img className='img-fluid' src={highlight.videoLink} alt="video" /> */}
                     <div className="col">
-                    <div className="row">
-                        <video className='img-fluid video-thumb' src={highlight.videoLink} alt="video" />
-                    </div>
-                    <div className="row">
-                        <p className="highlight-title text-capitalize">{highlight.name}</p>
-                    </div>
+                        <div className="row">
+                            <video className='img-fluid video-thumb' src={highlight.videoLink} alt="video" />
+                        </div>
+                        <div className="row">
+                            <p className="highlight-title text-capitalize">{highlight.name}</p>
+                        </div>
                     </div>
                   </div>
                 </div>
