@@ -64,7 +64,7 @@ const WinnerProfilePage = () => {
       <div className="row">
         <div className="col-md-4 text-white text-uppercase profileContainer athleticFont ">
           <button className="btn mb-2 btnStyle winnerButton1" onClick={() => setShowStats(!showStats)}>Stats</button>
-          <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={navigateToHighlights}>Highlights</button>
+          <button className="btn mb-2 btnStyle winnerButton1" onClick={navigateToHighlights}>Highlights</button>
           <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => { navigate(`/awards/${awardId}/years/${yearId}`) }}>Back</button>
           <Link to="/" className="btn mb-2 btnStyle yellowBtnProfile">Start Over</Link>
         </div>

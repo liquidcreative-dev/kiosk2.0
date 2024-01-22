@@ -139,11 +139,10 @@ const Highlights = () => {
 
       <div className="row">
         <div className="col-md-4 text-white text-uppercase profileContainer athleticFont ">
-          {/* <button className="btn w-75 mb-2 btnStyle winnerButton" onClick={() => navigate(`/profile/${athlete.id}`, { state: { awardId, yearId } })}>Profile</button> */}
           <button className="btn mb-2 btnStyle winnerButton1" onClick={toggleHighlightModal}>Highlights</button>
           <button className="btn mb-2 btnStyle winnerButton1" onClick={() => navigate(-1)}>Stats</button>
           <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => navigate(-1)}>Back</button>
-          <Link to="/awards" className="btn mb-2 btnStyle yellowBtnProfile">Start Over</Link>
+          <Link to="/" className="btn mb-2 btnStyle yellowBtnProfile">Start Over</Link>
         </div>
       </div>
 

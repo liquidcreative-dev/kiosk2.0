@@ -618,7 +618,7 @@
     z-index:3;
     height: 300px;
     font-size: 150px;
-    color: #ffffff;  /* Adjust color as needed */
+    color: #ffffff;  
     margin-left: 17px;
     top: 15px;
 }
@@ -639,7 +639,7 @@
 }
 
 .video-modal {
-    position: fixed; /* Fixed position to cover the whole screen */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -647,14 +647,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.9); /* Nearly opaque black background */
-    z-index: 1000; /* High z-index to ensure it's on top of other content */
+    background-color: rgba(0, 0, 0, 0.9); 
+    z-index: 1000; 
   }
   
   .video-modal-content {
-    width: 90%; /* Take up 90% of the window width */
-    height: 90%; /* Take up 90% of the window height */
-    position: relative; /* Relative positioning for placing the close button */
+    width: 90%; 
+    height: 90%; 
+    position: relative; 
   }
   
   .close-video-modal {
@@ -671,60 +671,58 @@
   iframe {
     width: 100%;
     height: 100%;
-    border: none; /* Remove the border from the iframe */
+    border: none; 
   }
 
   .highlight-component {
-    background-color: #dca101; /* Same background color as yearComponent */
+    background-color: #dca101; 
     font-weight: 600;
     font-size: 20px;
     color: white;
-    width: 1300px; /* Adjust as needed */
+    width: 1300px; 
     border-radius: 25px 0 0 25px;
-    margin-left: 600px; /* Adjust as needed */
-    margin-top: -450px; /* Match your existing margin */
+    margin-left: 600px; 
+    margin-top: -625px; 
 }
 
 .statsTitle {
     font-weight: 600;
     font-size: 40px;
     text-align: center;
+    color:#d0152c;
 }
 
 .highlight-item {
-    background-color: white; /* Background for each item */
-    color: #dca101; /* Text/icon color */
-    text-align: center; /* Centering content */
-    border-radius: 50%; /* Circular shape */
-    margin-bottom: 3px; /* Spacing between items */
-    cursor: pointer; /* Cursor change on hover */
+    background-color: white; 
+    color: #dca101; 
+    text-align: center; 
+    border-radius: 50%; 
+    margin-bottom: 3px; 
+    cursor: pointer; 
 } 
 
 .highlight-item:hover {
-    background-color: #dca101; /* Background color on hover */
-    color: white; /* Text/icon color on hover */
+    background-color: #dca101; 
+    color: white; 
 }
 
-/* Adjust the button styling to match your YearComponent's close button */
 .btn.btn-light.position-absolute.top-0.end-0 {
     color: #dca101;
     background-color: white;
     border: none;
 }
 
-/* Custom styles for your image and title inside each highlight item */
-
 .video-thumb {
-    border-radius: 50%; /* Circular shape */
+    border-radius: 50%; 
 }
 
 .highlight-title {
     font-size: 30px;
-    font-weight: 600;
+    font-weight: 900;
     margin-top: 5px;
+    color: #d0152c;
 }
 
-/* Overflow and max-height styling is already inline in your component */
 .historyScroll {
     overflow-y: auto;
     max-height: 400px;
