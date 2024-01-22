@@ -1,22 +1,27 @@
 {
   "collectionName": "components_components_highlights",
   "info": {
-    "displayName": "Highlights"
+    "displayName": "Highlights",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "name": {
       "type": "string"
     },
-    "videoLink": {
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "videoLink": {
+      "type": "string"
     }
   }
 }
