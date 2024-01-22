@@ -118,7 +118,7 @@ const Highlights = () => {
               <div>
                 <h1 className="yearBannerText athleticFont pt-3">{athlete?.award?.data?.attributes?.name}</h1>
                 <div>
-                  <p className="card-text d-inline yearBannerYear">HIGHLIGHTS {athlete?.years?.data[0]?.attributes?.awardYear}</p>
+                  <p className="card-text d-inline yearBannerYear">WINNER {athlete?.years?.data[0]?.attributes?.awardYear}</p>
                   <img className='text-uppercase bannerIcon d-inline' src={athlete?.award?.data?.attributes?.iconLink} alt="icon" />
                 </div>
               </div>
