@@ -698,7 +698,7 @@
     border-radius: 50%; /* Circular shape */
     margin-bottom: 3px; /* Spacing between items */
     cursor: pointer; /* Cursor change on hover */
-}
+} 
 
 .highlight-item:hover {
     background-color: #dca101; /* Background color on hover */
@@ -713,12 +713,15 @@
 }
 
 /* Custom styles for your image and title inside each highlight item */
-.img-fluid {
-    /* Adjust image styling as needed */
+
+.video-thumb {
+    border-radius: 50%; /* Circular shape */
 }
 
 .highlight-title {
-    /* Adjust title styling as needed */
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 5px;
 }
 
 /* Overflow and max-height styling is already inline in your component */
