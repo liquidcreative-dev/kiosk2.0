@@ -29,7 +29,7 @@ const HighlightModal = ({ highlights, onClose }) => {
                         <video className='img-fluid video-thumb' src={highlight.videoLink} alt="video" />
                     </div>
                     <div className="row">
-                        <p className="highlight-title">{highlight.name}</p>
+                        <p className="highlight-title text-capitalize">{highlight.name}</p>
                     </div>
                     </div>
                   </div>

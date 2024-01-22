@@ -13,7 +13,7 @@ const VideoModal = ({ videoLink, onClose }) => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <button className="close-video-modal" onClick={onClose}>X</button>
+        <button className="btn btn-light position-absolute top-0 end-0 componentButton" onClick={onClose}>X</button>
       </div>
     </div>
   );
