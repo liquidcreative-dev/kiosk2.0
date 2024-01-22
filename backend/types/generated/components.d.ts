@@ -4,10 +4,12 @@ export interface ComponentsHighlights extends Schema.Component {
   collectionName: 'components_components_highlights';
   info: {
     displayName: 'Highlights';
+    description: '';
   };
   attributes: {
     name: Attribute.String;
-    videoLink: Attribute.Media;
+    video: Attribute.Media;
+    videoLink: Attribute.String;
   };
 }
 

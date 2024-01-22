@@ -1,21 +1,19 @@
 import React from 'react';
 
-// const VideoComponent = ({ videoUrl, onClose }) => {
-//   return (
-//     <div className="video-player">
-//       <button className="close-button" onClick={onClose}>X</button>
-//       <video controls autoPlay src={videoUrl}></video>
-//     </div>
-//   );
-// };
 const VideoModal = ({ videoLink, onClose }) => {
-  if (!videoLink) return null;
-
   return (
-    <div className="modalBackdrop">
-      <div className="modalContent">
-        <video src={videoLink} controls autoPlay style={{ width: '100%' }}></video>
-        <button className="btn btn-danger" onClick={onClose}>Close</button>
+    <div className="video-modal">
+      <div className="video-modal-content">
+        <iframe
+          width="100%"
+          height="100%"
+          src={videoLink}
+          title="Video modal"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <button className="close-video-modal" onClick={onClose}>X</button>
       </div>
     </div>
   );
