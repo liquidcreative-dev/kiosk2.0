@@ -138,7 +138,7 @@ const Highlights = () => {
       </div>
 
       <div className="row">
-        <div className="col-md-4 text-white text-uppercase profileContainer athleticFont ">
+        <div className="col-md-4 text-white text-uppercase highlightContainer athleticFont ">
           <button className="btn mb-2 btnStyle winnerButton1" onClick={toggleHighlightModal}>Highlights</button>
           <button className="btn mb-2 btnStyle winnerButton1" onClick={() => navigate(-1)}>Stats</button>
           <button className="btn mb-2 btnStyle yellowBtnProfile" onClick={() => navigate(-1)}>Back</button>
