@@ -64,6 +64,7 @@ module.exports = [
             'blob:',
             'market-assets.strapi.io',
             'res.cloudinary.com',
+            'https://*.dropbox.com',
           ],
           upgradeInsecureRequests: null,
         },
