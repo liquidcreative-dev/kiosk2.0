@@ -8,7 +8,6 @@ export interface ComponentsHighlights extends Schema.Component {
   };
   attributes: {
     name: Attribute.String;
-    video: Attribute.Media;
     videoLink: Attribute.Text;
   };
 }
