@@ -64,6 +64,7 @@ module.exports = [
             'blob:',
             'market-assets.strapi.io',
             'res.cloudinary.com',
+            '*.vimeo.com',
           ],
           upgradeInsecureRequests: null,
         },
