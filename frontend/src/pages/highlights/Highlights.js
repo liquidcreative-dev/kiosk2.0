@@ -83,7 +83,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useParams, Link } from 'react-router-dom';
 import HighlightModal from './HighlightModal';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
-import { config } from './constants';
+import { config } from '../../components/Constants';
 
 const URL = config.url;
 

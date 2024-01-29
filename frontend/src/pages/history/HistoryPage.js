@@ -3,8 +3,7 @@ import { useNavigate, useParams, Link } from 'react-router-dom';
 import HistoryComponent from './HistoryComponent';
 import YearComponent from './YearComponent';
 import { ReactComponent as MSHFWhiteLogo } from './sports_hall_logo_white.svg';
-// import { config } from '../components/constants';
-import { config } from './constants';
+import { config } from '../../components/Constants';
 const URL = config.url
 
 const HistoryPage = () => {

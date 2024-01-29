@@ -21,7 +21,7 @@
       ]
     },
     "videoLink": {
-      "type": "string"
+      "type": "text"
     }
   }
 }

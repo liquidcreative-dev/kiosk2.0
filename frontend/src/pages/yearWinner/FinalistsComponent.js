@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import { config } from '../components/constants';
-import { config } from './constants';
+import { config } from '../../components/Constants';
 const URL = config.url
 
 const FinalistsComponent = ({ awardId, yearId, onClose }) => {

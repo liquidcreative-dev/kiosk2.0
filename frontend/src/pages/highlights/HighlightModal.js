@@ -4,8 +4,11 @@ import VideoModal from './VideoModal';
 const HighlightModal = ({ highlights, onClose }) => {
   const [currentVideo, setCurrentVideo] = React.useState(null);
 
-  const handleVideoClick = (videoLink) => {
-    setCurrentVideo(videoLink);
+  // const handleVideoClick = (videoLink) => {
+  //   setCurrentVideo(videoLink);
+  // };
+  const handleVideoClick = (embedCode) => {
+    setCurrentVideo(embedCode);
   };
 
   const handleCloseVideo = () => {
@@ -53,7 +56,8 @@ const HighlightModal = ({ highlights, onClose }) => {
           </div>
         </div>
       </div>
-      {currentVideo && <VideoModal videoLink={currentVideo} onClose={handleCloseVideo} />}
+      {/* {currentVideo && <VideoModal videoLink={currentVideo} onClose={handleCloseVideo} />} */}
+      {currentVideo && <VideoModal embedCode={currentVideo} onClose={handleCloseVideo} />}
     </div>
   );
 };
